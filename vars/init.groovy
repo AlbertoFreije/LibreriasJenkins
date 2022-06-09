@@ -5,7 +5,8 @@ def call() {
         writeFile(file: nombreXML, text: inputFile.readToString())
         echo fileExists(nombreXML).toString()
         def file = readFile nombreXML
-        def xml = new XmlParser().parseText(file)
+        //def xml = new XmlParser().parseText(file)
+        def xml = new XmlSlurper().parseText(file)
         //echo "${xml}"
         println(file)
         println(xml.name())
