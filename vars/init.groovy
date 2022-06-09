@@ -9,6 +9,6 @@ def call() {
         //echo "${xml}"
         println(xml.OWASPZAPReport)
         println(xml.attributes)
-        println(xml[0])
+        println(xml.name())
         //OWASPZAPReport[attributes={version=2.11.1, generated=Fri, 3 Jun 2022 12:02:03}
 }
