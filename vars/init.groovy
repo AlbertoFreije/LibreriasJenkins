@@ -8,6 +8,7 @@ def call() {
         //def xml = new XmlParser().parseText(file)
         def xml = new XmlSlurper().parseText(file)
         //echo "${xml}"
+        print prettyPrint(toJson(xml))
         println(file)
         println(xml.name())
         println(xml.site.name)
