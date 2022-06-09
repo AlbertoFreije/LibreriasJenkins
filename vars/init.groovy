@@ -1,4 +1,5 @@
 #!/usr/bin/env groovy
+import staticgroovy.json.JsonOutput.*
 def call() {
     def nombreXML = 'map.xml';
     def inputFile = input message: 'Upload file', parameters: [file(name: nombreXML)]
