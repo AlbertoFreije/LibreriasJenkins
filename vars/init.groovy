@@ -7,8 +7,7 @@ def call() {
         def file = readFile nombreXML
         def xml = new XmlParser().parseText(file)
         //echo "${xml}"
-        println(xml.OWASPZAPReport)
-        println(xml.attributes)
+        println(file)
         println(xml.name())
         //OWASPZAPReport[attributes={version=2.11.1, generated=Fri, 3 Jun 2022 12:02:03}
 }
