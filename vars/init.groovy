@@ -6,6 +6,6 @@ def call() {
         echo fileExists(nombreXML).toString()
         def file = readFile nombreXML
         def xml = new XmlParser().parseText(file)
-        //echo "${xml}"
+        echo "${xml}"
         println(xml.value.site.attributes.name)
 }
